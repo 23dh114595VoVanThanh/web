@@ -1,0 +1,506 @@
+﻿*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+}
+body {
+    min-height: 100vh;
+    margin: auto;
+    min-width: 1200px;
+    background-color: #fafafa;
+}
+header{
+    text-align:center;
+   
+}
+nav {
+    background-color: #d3691e;
+ 
+}
+ul{
+    list-style:none;
+   
+}
+
+a{
+    text-decoration:none;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+nav {
+    background-color: #d3691e;
+    display: flex;
+    justify-content: center; /* Căn giữa toàn bộ nội dung */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    padding: 0 20px;
+
+}
+.fas fa-search {
+    width: 200px;
+    background-color: #d3691e;
+    color: black;
+}
+
+nav ul li, a {
+    color: white;
+}
+/*nav li{
+    height:50px;
+}*/
+
+nav a{
+    height:100%;
+    padding: 0 30px;
+    display:flex;
+    align-items:center;
+    color:white;
+    font-size:15px;
+}
+    nav a:hover {
+        background-color: #d3691e;
+        transition: 0.3s ease;
+    }
+
+
+/*nav ul li:nth-child(2) input {
+    
+}*/
+    nav ul li:nth-child(2){
+        position:relative;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15px; /* Khoảng cách giữa logo và các mục navbar */
+     
+    }
+nav ul li:nth-child(3) a,
+nav ul li:nth-child(4) a, /* Địa chỉ cửa hàng */
+nav ul li:nth-child(5) a,
+nav ul li:nth-child(6) a { /* Theo dõi đơn hàng */
+    padding: 0 15px; /* Giảm padding cho các liên kết */
+}
+    nav ul li {
+        margin-right: 15px; /* Khoảng cách giữa các mục */
+    }
+        .icon-login{
+            display: inline-block;
+            margin-top:5px;
+            vertical-align: top;            
+            border: 1px; /* Viền của ô */
+            border-radius: 10px; /* Bo góc */
+        }
+
+            .login-register a {
+                color: white;
+                padding: 0; /* Tạo khoảng cách giữa các liên kết */
+                text-decoration: none;
+                font-size: 12px; /* Thu nhỏ cỡ chữ */
+                transition: color 0.3s ease;
+            }
+                .login-register a:hover {
+                    color: #f0e68c;
+                    background-color: #d3691e; /* Thay đổi màu khi hover */
+                }
+       .icon-address {
+            display: inline-block;
+            margin-top:5px;
+            vertical-align: top;
+           
+            border: 1px; /* Viền của ô */
+            border-radius: 10px; /* Bo góc */
+        }
+            .Diachi a {
+                color: white;
+                padding: 0; /* Tạo khoảng cách giữa các liên kết */
+                text-decoration: none;
+                font-size: 12px; /* Thu nhỏ cỡ chữ */
+                transition: color 0.3s ease;
+            }
+                .Diachi a:hover {
+                    color: #f0e68c;
+                    background-color: #d3691e; /* Thay đổi màu khi hover */
+                }
+        /*.icon-phone {
+            padding: 5px 15px;
+            border: 1px solid #d3691e;*/ /* Thêm màu cho viền */
+            /*border-radius: 10px;*/ /* Bo góc */
+        /*}*/
+      
+
+.contact-info a {
+    color: white; /* Màu chữ mặc định */
+    padding: 0; /* Khoảng cách giữa các liên kết */
+    text-decoration: none;
+    font-size: 12px; /* Cỡ chữ */
+    transition: color 0.3s ease; /* Tạo hiệu ứng chuyển đổi màu */
+}
+    .contact-info a:hover {
+        color: #f0e68c;
+        background-color: #d3691e;
+        /* Thay đổi màu chữ khi hover */
+        /* Tạo đường gạch dưới khi hover (nếu muốn) */
+    }
+       /* nav ul li:nth-child(2) i {
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 15px;
+        }*/
+        
+.isearch {
+    width: 350px;
+    padding: 10px;
+    padding-right: 40px; /* Tạo không gian cho icon */
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    border:none;
+}
+/*.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}*/
+.line1 {
+    margin: 0 10px; /* Khoảng cách giữa dòng dọc và các mục */
+    font-size: 30px; /* Cỡ chữ của dòng dọc */
+}
+.line2 {
+    margin: 0 5px; /* Khoảng cách giữa dòng dọc và các mục */
+    font-size: 30px; /* Cỡ chữ của dòng dọc */
+}
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #fafafa;
+    padding: 20px;
+    box-sizing: border-box;
+    height: auto;
+    overflow-y: auto;
+    float: left;
+    margin-left:30px;
+       
+}
+
+    .sidebar h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .sidebar label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+.product-area {
+    width: 70%;
+    padding: 10px;
+   margin:10px;
+   
+    
+    box-sizing: border-box;
+    border-radius: 6px;
+    display: flex;
+    flex-wrap: wrap; /* Để tạo nhiều hàng */
+    gap: 20px; /* Khoảng cách giữa các sản phẩm */
+    border: 1px solid #ddd;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+     background-color:white;
+     margin-left:20px;
+}
+
+.product {
+    width: calc(25% - 20px); /* Mỗi sản phẩm chiếm 1/4 chiều rộng của container */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /*border: 1px solid #ddd;*/
+   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
+}
+
+    .product img {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+.product-info {
+    text-align: center;
+}
+
+    .product-info h4 {
+        margin: 0 0 10px 0;
+        font-size: 15px;
+    }
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+    .quantity-controls input {
+        width: 60px;
+        height:25px;
+        text-align: center;
+        border: 1px solid #ccc;
+       
+    }
+
+    .quantity-controls button {
+        background-color: #dddcdc;
+        
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+        .quantity-controls button:disabled {
+            background-color: white;
+            cursor: pointer;
+            
+            
+        }
+
+.product-price {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.btn-mua {
+    border-radius: 15px;
+    background-color: white;
+    color: #d3691e;
+    width: 100px;
+    height: 35px;
+    border-color: #d3691e;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 1px solid #d3691e;
+}
+    .btn-mua:hover {
+        background-color: #d3691e;
+        color:white;
+        cursor:pointer;
+        transition: 0.15s ease;
+    }
+
+.footer {
+    background-color: #F9E3E3; /* Màu nền giống hình mẫu */
+    padding: 40px 0;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 180px;
+    margin: 0 15px;
+}
+
+.footer-logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.footer-column h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.footer-column p,
+.footer-column ul {
+    font-size: 0.9em;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.footer-column ul {
+    list-style:circle;
+    padding: 0;
+}
+    .footer-column ul li {
+        margin-bottom: 5px;
+    }
+        .footer-column ul li a {
+            
+            text-decoration: none;
+            color: #6e7283;
+        }
+
+            .footer-column ul li a:hover {
+                text-decoration: none;
+            }
+
+.footer-certification {
+    width:200px;
+    margin-top: 10px;
+}
+.Qlkh {
+    width: 70%;
+    padding: 60px;
+    margin: 25px auto;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Căn nội dung về phía trái */
+    height:auto;
+}
+
+/* Định dạng tiêu đề */
+.Qlkh-title {
+    font-size: 24px;
+    color: #ff5f1f;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+    text-decoration: none;
+    color: #ff5f1f; 
+    margin-bottom:40px;
+
+}
+
+/* Căn giữa hình ảnh */
+ .Qlkh-img {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0px; /* Khoảng cách giữa các hình ảnh */
+            margin-top: 20px;
+        }
+
+        /* Định dạng cho hình ảnh */
+        .Qlkh-img img {
+            max-width: 700px;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+        }
+        .Qlkh ul li{
+           list-style:disc;
+           margin-top:15px;
+           
+        }
+        .Qlkh ol li{
+            padding-left:3px;
+        }
+.Qlkh h2 {
+    color: #666677;
+    font-size: 20px;
+    padding-left: 0;
+    margin-left: 0;
+    float:left
+}
+.tongtrang {
+    color: #247BCA;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top:40px;
+    padding-bottom:40px;
+}
+
+/* Div lớn bên trái */
+.Baiviet {
+    flex: 2.5;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-right: 20px;
+    flex-direction:column;
+}
+
+/* Div nhỏ bên phải */
+.Baivietlq {
+    flex: 0.75;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+    /* Một chút style cho tiêu đề và văn bản */
+    .Baiviet h2,h3 {
+        color: #FF5733; /* Màu cam nổi bật */
+    }
+
+    .Baivietlq a {
+        text-decoration: none;
+        color: #0056b3;
+        display: block;
+        margin: 5px 0;
+        padding-left:10px;
+    }
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .tags span {
+        background-color: #f0f0f0;
+        padding: 5px 10px;
+        margin: 5px;
+        border-radius: 5px;
+        color: #0056b3;
+        border-color: black;
+    }
+    .ND{
+        padding-left:25px;
+        
+    }
+        .ND p {
+            color: #6a6867
+        }
+
+
+.Baiviet-img {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 30px;
+}
+.link{
+    padding-top:20px;
+}
+.Baivietlq h3 {
+    color: #726666;
+    padding-bottom:15px;
+    margin-top:15px;
+}
+.tongtrangthongtin {
+    color: #247BCA;
+    margin-top: 20px;
+    margin-left: 160px;
+}
