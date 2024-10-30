@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/MyCss.css" rel="stylesheet" />
+</head>
+<body>
+   
+        @*// sidebar trái*@
+        <div class="tongtrang">
+            <span>Trang chủ </span><span style="color: #686565; margin-left:15px;">  → Quyền Lợi khách hàng thành viên  </span>
+        </div>
+        <div class="sidebar">
+            <h3>Thương Hiệu</h3>
+            <label><input type="checkbox" /> Khác</label>
+            <label><input type="checkbox" /> Cty CP TP Bich Chi - 45X1 Nguyen Sinh Sac,Thi xa Sa Dec, Dong Thap</label>
+            <label><input type="checkbox" /> Cty CP tap doan Trung Nguyen - 82-84 Bui Thi Xuan,P.Ben Thanh,Q1, HCM</label>
+            <label><input type="checkbox" /> Cty CP HTD MaSan(Nuoc+cafe) - Tang12,Toa nha Kumho,39 Le Duan, P. Ben Nghe,Q1, Tp.HCM</label>
+            <label><input type="checkbox" /> Cty TNHH MTV Thai Kien - 135/37/50 Nguyen Huu Canh,P22,Q.BT, HCM</label>
+            <a href="#" style="color: #d3691e; background-color: #f4f4f4; margin-bottom:15px;margin-top:15px; ">xem thêm</a>
+            <h3 style="margin-bottom: 30px; margin-top: 15px;">Loại sản phẩm</h3>
+            <label><input type="checkbox" /> Nước - Nước Giải Khát</label>
+            <label><input type="checkbox" /> Sữa - Sữa Chua - Sp Từ Sữa</label>
+            <h3 style="margin-bottom:30px; margin-top:15px;">Giá</h3>
+            <label><input type="checkbox" /> < 30,000₫</label>
+            <label><input type="checkbox" /> 30,000₫ - 50,000₫</label>
+            <label><input type="checkbox" /> 50,000₫ - 100,000₫</label>
+            <label><input type="checkbox" /> 100,000₫ - 200,000₫</label>
+            <label><input type="checkbox" /> > 200,000₫</label>
+        </div>
+
+        @*// sản phẩm*@
+<div class="product-area">
+    <div class="product">
+        <img src="~/Content/img/NuocUong/3564654-l_sua_trai_cay_nutri_banh_quy_kem_loc_6x297ml_3970a257ae9c4dffbcb3b50ea3c4ccff_grande.png" alt="Sản phẩm 1" style="width:200px" />
+        <div class="product-info">
+            <h4>Sữa Trái Cây Nuti 1 lốc 6x297ml</h4>
+            <div class="product-price" style="color: #d3691e">200.000 VND</div>
+        </div>
+        <div class="quantity-controls">
+
+            <input type="number" value="1" min="1" />
+
+        </div>
+        <button class="btn-mua">Chọn Mua</button>
+    </div>
+
+    <div class="product">
+        <img src="~/Content/img/NuocUong/3564654_sua_trai_cay_nutri_banh_quy_kem_297ml_a1619dced9a240e7b2385309cda25c72_grande.png" alt="Sản phẩm 1" style="width:200px" />
+        <div class="product-info">
+            <h4>Sữa Trái Cây Nuti 297ml</h4>
+            <div class="product-price" style="color: #d3691e">150.000 VND</div>
+        </div>
+        <div class="quantity-controls">
+
+            <input type="number" value="1" min="1" />
+
+        </div>
+        <button class="btn-mua">Chọn Mua</button>
+    </div>
+    <div class="product">
+        <img src="~/Content/img/NuocUong/huc_uong_sua_chua___chanh_imuse_280ml_e21cf2f1413a4090a57732bb7e52c559_d4267be7411048b6b9cc9cdf52f27efe_grande.png" alt="Sản phẩm 1" style="width:200px" />
+        <div class="product-info">
+            <h4>Nước Uống Sữa Chua Vị Chanh</h4>
+            <div class="product-price" style="color: #d3691e">150.000 VND</div>
+        </div>
+        <div class="quantity-controls">
+
+            <input type="number" value="1" min="1" />
+
+        </div>
+        <button class="btn-mua">Chọn Mua</button>
+    </div>
+    <div class="product">
+        <img src="~/Content/img/NuocUong/at_mirinda_cam_lon_cao_thung_24x320ml_1118b5510d6d4abc8524bdd55cc0bbb5_28a20ad2f93041d1978b52fa1c8ff808_grande.png" alt="Sản phẩm 1" style="width:200px" />
+        <div class="product-info">
+            <h4>Mirinda Cam Thùng Lon Cao</h4>
+            <div class="product-price" style="color: #d3691e">150.000 VND</div>
+        </div>
+        <div class="quantity-controls">
+
+            <input type="number" value="1" min="1" />
+
+        </div>
+        <button class="btn-mua">Chọn Mua</button>
+    </div>
+    <hr style=" border: none; border-top: 1px solid #ccc; margin-bottom:20px 0; width: 100%;">
+    <div class="product">
+
+        <img src="~/Content/img/NuocUong/nescafe_ca_phe_den_da_hop_giay_5x75ml_ef2404451efd4b0186942d8a44eccee1_dba86f6396174025b3896c94b3e9aba7_grande.png" alt="Sản phẩm 1" style="width:200px" />
+        <div class="product-info">
+            <h4>Cà Phê Đen Hộp Giấy 5x75ml</h4>
+            <div class="product-price" style="color: #d3691e">150.000 VND</div>
+        </div>
+        <div class="quantity-controls">
+
+            <input type="number" value="1" min="1" />
+
+        </div>
+
+        <button class="btn-mua">Chọn Mua</button>
+
+    </div>
+    <div class="product">
+        <img src="~/Content/img/NuocUong/3085844_nuoc_yen_sao_sanest_lon_190ml_9586e47e3e1340eeba90ad86ca7d17d5_b01340bd48f84807b507c43c096ed0ee_grande.png" alt="Sản phẩm 1" style="width:200px" />
+        <div class="product-info">
+            <h4>Nước Yến sào Sanest 190ml</h4>
+            <div class="product-price" style="color: #d3691e">150.000 VND</div>
+        </div>
+        <div class="quantity-controls">
+
+            <input type="number" value="1" min="1" />
+
+        </div>
+        <button class="btn-mua">Chọn Mua</button>
+    </div>
+    <div class="product">
+
+        <img src="~/Content/img/NuocUong/ai_khat_7up_soda_chanh_thung_24x320ml_eaba50c822b248b7b1df895c2e8b4b33_0d45220343fc437a8cd9d894b4101b86_grande.png" alt="Sản phẩm 1" style="width:200px" />
+        <div class="product-info">
+            <h4>7up Soda Chanh Thùng 24x320ml</h4>
+            <div class="product-price" style="color:#d3691e">150.000 VND</div>
+        </div>
+        <div class="quantity-controls">
+
+            <input type="number" value="1" min="1" />
+
+        </div>
+        <button class="btn-mua">Chọn Mua</button>
+    </div>
+    <div class="product">
+
+        <img src="~/Content/img/NuocUong/oc_giai_khat_7up_soda_chanh_lon_320ml_4e53f419b11248fc9b740624d37cdcf8_e5d1ee4dde3c4388a617a4ecc00828d3_grande.png" alt="Sản phẩm 1" style="width:200px" />
+        <div class="product-info">
+            <h4>7up Soda Chanh Thùng 320ml</h4>
+            <div class="product-price" style="color:#d3691e">150.000 VND</div>
+        </div>
+        <div class="quantity-controls">
+
+            <input type="number" value="1" min="1" />
+
+        </div>
+        <button class="btn-mua">Chọn Mua</button>
+    </div>
+</div>
+    <!-- Thêm sản phẩm khác ở đây -->
+
+
+    <div class="chuyentrang" style="padding-left:715px; margin-bottom:50px;">
+        <span>← Trang trước  1 </span><span> 2  Trang sau  →</span>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column" style="color: #6e7283;">
+                <img src="~/Content/img/fot_logo.png" class="footer-img" />
+                <p>Cửa hàng - bách hóa<br /> hiện đại Co.opSmile<br /> là thành viên của nhà<br /> bán lẻ hàng đầu<br /> Việt Nam Saigon Co.op</p>
+                <p style="margin-top:20px;">Đ/c văn phòng:<br /> 131 Điện Biên Phủ, Phường 15, Quận Bình Thạnh, Tp. HCM</p>
+                <p>info@coopsmile.vn</p>
+                <p>0911.825753</p>
+            </div>
+            <div class="footer-column">
+                <h3 style="color:#45534c;">Hỗ trợ khách hàng</h3>
+                <ul>
+                    <li><a href="#">Điều khoản dịch vụ</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Chính sách đặt hàng</a></li>
+                    <li><a href="#">Chính sách giao nhận</a></li>
+                    <li><a href="#">Chính sách đổi trả hàng</a></li>
+                    <li><a href="#">Xuất hóa đơn GTGT</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 style="color:#45534c;">Thông tin</h3>
+                <ul>
+                    <li><a href="#">Giới thiệu về Co.opSmile</a></li>
+                    <li><a href="#">Câu chuyện thương hiệu</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                    <li><a href="#">Hệ thống cửa hàng</a></li>
+                    <li><a href="#">Thông tin hỗ trợ khách hàng</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 style="color:#45534c;">Thông tin hữu ích</h3>
+                <ul>
+                    <li><a href="#">Quyền lợi thẻ thành viên</a></li>
+                    <li><a href="#">Khuyến mãi nổi bật</a></li>
+                    <li><a href="#">Thông tin - Sự kiện</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 style="color: #6e7283;">Chứng nhận</h3>
+                <img src="~/Content/img/fot_chung_nhan.png" class="footer-certification" />
+            </div>
+        </div>
+    </footer>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/MyCss.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="tongtrang">
+        <span>Trang chủ </span><span style="color: #686565;">  → Quyền Lợi khách hàng thành viên  </span>
+    </div>
+    <div class="container">
+        @*// sidebar trái*@
+        <div class="sidebar">
+            <h3>Thương Hiệu</h3>
+            <label><input type="checkbox" />222-Ct TNHHSX-TM-DVThaoMinh(MM)</label>
+            <label><input type="checkbox" /> 110-Cong ty TNHH Harvest(MD)</label>
+            <label><input type="checkbox" /> 100-Cty TNHH TP Khang Phuc-NR</label>
+            <label><input type="checkbox" /> Cty LTTP Safoco-NR - 17/13-7/25 Kha Van Can,P.Linh Tay, Q.Thu Duc,Tp.HCM</label>
+            <label><input type="checkbox" /> 17559 - NTPM</label>
+            <a href="#" style="color: #d3691e; background-color: #f4f4f4; margin-bottom:15px;margin-top:15px; ">xem thêm</a>
+            <h3 style="margin-bottom: 30px; margin-top: 15px;">Loại sản phẩm</h3>
+            <label><input type="checkbox" /> Lương Thực - Gia Vị</label>
+            <label><input type="checkbox" /> Chăm Sóc Cá Nhân</label>
+            <label><input type="checkbox" /> Bánh - Snack - Khô</label>
+            <label><input type="checkbox" /> Nước - Nước Giải Khát</label>
+            <h3 style="margin-bottom:30px; margin-top:15px;">Giá</h3>
+            <label><input type="checkbox" /> < 30,000₫</label>
+            <label><input type="checkbox" /> 30,000₫ - 50,000₫</label>
+            <label><input type="checkbox" /> 50,000₫ - 100,000₫</label>
+            <label><input type="checkbox" /> 100,000₫ - 200,000₫</label>
+            <label><input type="checkbox" /> > 200,000₫</label>
+        </div>
+
+        @*// sản phẩm*@
+
+        <div class="product-area">
+            <div class="product">
+                <img src="~/Content/img/Khuyến Mãi/frame_1.png" alt="Sản phẩm 1" style="width:200px" />
+                <div class="product-info">
+                    <h4>Nước uống sữa chua nutiboost vị việt quất thùng</h4>
+                    <div class="product-price" style="color: #d3691e">126.000 VND</div>
+                    <p class="product-km" style="text-decoration: line-through; color: #bfbcba;">135.000 VND</p>
+                </div>
+                <div class="quantity-controls">
+                    @*<button onclick="decreaseQuantity(this)">-</button>*@
+                    <input type="number" value="1" min="1" />
+                    @*<button onclick="increaseQuantity(this)">+</button>*@
+                </div>
+                <button class="btn-mua">Chọn Mua</button>
+            </div>
+
+            <div class="product">
+                <img src="~/Content/img/Khuyến Mãi/frame_1 (1).png" alt="Sản phẩm 1" style="width:200px" />
+                <div class="product-info">
+                    <h4>Nước uống sữa chua nutiboost vị việt quất lốc </h4>
+                    <div class="product-price" style="color: #d3691e">21.000 VND</div>
+                    <p  class="product-km"style="text-decoration: line-through; color: #bfbcba;">25.000 VND</p>
+                </div>
+                <div class="quantity-controls">
+                    @*<button onclick="decreaseQuantity(this)">-</button>*@
+                    <input type="number" value="1" min="1" />
+                    @*<button onclick="increaseQuantity(this)">+</button>*@
+                </div>
+                <button class="btn-mua">Chọn Mua</button>
+            </div>
+            <div class="product">
+                <img src="~/Content/img/Khuyến Mãi/frame_1 (2).png" alt="Sản phẩm 1" style="width:200px" />
+                <div class="product-info">
+                    <h4>Nước uống sữa chua vị việt quất nutiboost 170ml</h4>
+                    <div class="product-price" style="color: #d3691e">6.000 VND</div>
+                    <p class="product-km" style="text-decoration: line-through; color: #bfbcba;">10.000 VND</p>
+                </div>
+                <div class="quantity-controls">
+                    @*<button onclick="decreaseQuantity(this)">-</button>*@
+                    <input type="number" value="1" min="1" />
+                    @*<button onclick="increaseQuantity(this)">+</button>*@
+                </div>
+                <button class="btn-mua">Chọn Mua</button>
+            </div>
+            <div class="product">
+                <img src="~/Content/img/Khuyến Mãi/frame_1 (3).png" alt="Sản phẩm 1" style="width:200px" />
+                <div class="product-info">
+                    <h4>Nước uống sữa chua nutiboost vị cam thùng</h4>
+                    <div class="product-price" style="color: #d3691e">126.000VND</div>
+                    <p class="product-km" style="text-decoration: line-through; color: #bfbcba;">133.000 VND</p>
+                </div>
+                <div class="quantity-controls">
+                    @*<button onclick="decreaseQuantity(this)">-</button>*@
+                    <input type="number" value="1" min="1" />
+                    @*<button onclick="increaseQuantity(this)">+</button>*@
+                </div>
+                <button class="btn-mua">Chọn Mua</button>
+
+            </div>
+            <hr style=" border: none; border-top: 1px solid #ccc; margin-bottom:20px 0; width: 100%;">
+            <div class="product">
+                <img src="~/Content/img/Khuyến Mãi/frame_1 (4).png" alt="Sản phẩm 1" style="width:200px" />
+                <div class="product-info">
+                    <h4>Nước uống sữa chua nutiboost vị cam lốc 4x170ml</h4>
+                    <div class="product-price" style="color: #d3691e">21.000 VND</div>
+                    <p class="product-km" style="text-decoration: line-through; color: #bfbcba;">25.000 VND</p>
+                </div>
+
+                <div class="quantity-controls">
+                    @*<button onclick="decreaseQuantity(this)">-</button>*@
+                    <input type="number" value="1" min="1" />
+                    @*<button onclick="increaseQuantity(this)">+</button>*@
+                </div>
+
+                <button class="btn-mua">Chọn Mua</button>
+            </div>
+            <div class="product">
+                <img src="~/Content/img/Khuyến Mãi/frame_1 (5).png" alt="Sản phẩm 1" style="width:200px" />
+                <div class="product-info">
+                    <h4>Nước uống sữa chua nutiboost vị cam chai 170ml</h4>
+                    <div class="product-price" style="color: #d3691e">6.000 VND</div>
+                    <p class="product-km" style="text-decoration: line-through; color: #bfbcba;">10.000 VND</p>
+                </div>
+                <div class="quantity-controls">
+                    @*<button onclick="decreaseQuantity(this)">-</button>*@
+                    <input type="number" value="1" min="1" />
+                    @*<button onclick="increaseQuantity(this)">+</button>*@
+                </div>
+                <button class="btn-mua">Chọn Mua</button>
+            </div>
+            <div class="product">
+                <img src="~/Content/img/Khuyến Mãi/frame_1 (6).png" alt="Sản phẩm 1" style="width:200px" />
+                <div class="product-info">
+                    <h4>Nước giải khát pepsi chai thùng 21x390ml</h4>
+                    <div class="product-price" style="color:#d3691e">164.000 VND</div>
+                    <p class="product-km" style="text-decoration: line-through; color: #bfbcba;">172.000 VND</p>
+                </div>
+                <div class="quantity-controls">
+                    @*<button onclick="decreaseQuantity(this)">-</button>*@
+                    <input type="number" value="1" min="1" />
+                    @*<button onclick="increaseQuantity(this)">+</button>*@
+                </div>
+                <button class="btn-mua">Chọn Mua</button>
+            </div>
+            <div class="product">
+                <img src="~/Content/img/Khuyến Mãi/frame_1 (7).png" alt="Sản phẩm 1" style="width:200px" />
+
+                <div class="product-info">
+                    <h4>Nước giải khát pepsi chai lốc 6x390ml</h4>
+                    <div class="product-price" style="color: #d3691e">42.000 VND</div>
+                    <p class="product-km" style="text-decoration: line-through; color: #bfbcba; ">50.000 VND</p>
+                </div>
+                <div class="quantity-controls">
+                    @*<button onclick="decreaseQuantity(this)">-</button>*@
+                    <input type="number" value="1" min="1" />
+                    @*<button onclick="increaseQuantity(this)">+</button>*@
+                </div>
+                <button class="btn-mua">Chọn Mua</button>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column" style="color: #6e7283;">
+                <img src="~/Content/img/fot_logo.png" class="footer-img" />
+                <p>Cửa hàng - bách hóa<br /> hiện đại Co.opSmile<br /> là thành viên của nhà<br /> bán lẻ hàng đầu<br /> Việt Nam Saigon Co.op</p>
+                <p style="margin-top:20px;">Đ/c văn phòng:<br /> 131 Điện Biên Phủ, Phường 15, Quận Bình Thạnh, Tp. HCM</p>
+                <p>info@coopsmile.vn</p>
+                <p>0911.825753</p>
+            </div>
+            <div class="footer-column">
+                <h3 style="color:#45534c;">Hỗ trợ khách hàng</h3>
+                <ul>
+                    <li><a href="#">Điều khoản dịch vụ</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Chính sách đặt hàng</a></li>
+                    <li><a href="#">Chính sách giao nhận</a></li>
+                    <li><a href="#">Chính sách đổi trả hàng</a></li>
+                    <li><a href="#">Xuất hóa đơn GTGT</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 style="color:#45534c;">Thông tin</h3>
+                <ul>
+                    <li><a href="#">Giới thiệu về Co.opSmile</a></li>
+                    <li><a href="#">Câu chuyện thương hiệu</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                    <li><a href="#">Hệ thống cửa hàng</a></li>
+                    <li><a href="#">Thông tin hỗ trợ khách hàng</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 style="color:#45534c;">Thông tin hữu ích</h3>
+                <ul>
+                    <li><a href="#">Quyền lợi thẻ thành viên</a></li>
+                    <li><a href="#">Khuyến mãi nổi bật</a></li>
+                    <li><a href="#">Thông tin - Sự kiện</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 style="color: #6e7283;">Chứng nhận</h3>
+                <img src="~/Content/img/fot_chung_nhan.png" class="footer-certification" />
+            </div>
+        </div>
+    </footer>
+    <div class="chuyentrang" style="padding-left:715px; margin-bottom:50px;">
+        <span>← Trang trước  1 </span><span> 2  Trang sau  →</span>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
